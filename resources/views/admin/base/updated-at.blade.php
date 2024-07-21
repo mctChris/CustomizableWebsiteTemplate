@@ -1,0 +1,1 @@
+{{ $record->updated_at }} {{ $record->updated_user ? '(' . $record->updated_user->username . ')' : '' }}

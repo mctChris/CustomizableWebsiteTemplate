@@ -1,0 +1,1 @@
+{{ $record->created_at }} {{ $record->created_user ? '(' . $record->created_user->username . ')' : '' }}

@@ -1,0 +1,1 @@
+<span data-id="{{ $record->id }}" data-is_show="{{ $record->is_show }}" class="badge-status badge badge-{{ $record->getStatus() == 'Online' ? 'success' : '' }}{{ $record->getStatus() == 'Offline' ? 'danger' : '' }}{{ $record->getStatus() == 'Scheduled' ? 'warning' : '' }}" title="Swap Status">{{ $record->getStatus() }}</span>

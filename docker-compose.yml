@@ -1,0 +1,36 @@
+version: "3.1"
+services:
+    bubble-bubble-httpd:
+      image: httpd:2.4-alpine
+      ports:
+        - "8002:80"
+      restart: always
+      volumes:
+        - ./:/var/www/html
+        - ./deploy/httpd.conf:/usr/local/apache2/conf/httpd.conf
+      container_name: bubble-bubble-httpd
+      logging:
+        options:
+          max-size: "100m"
+          max-file: "10"
+    bubble-bubble-fpm:
+      build:
+        context: ./deploy
+        dockerfile: ./Dockerfile
+      expose:
+        - 9000
+      restart: always
+      environment:
+        VIRTUAL_HOST: vhost-php.local
+        VIRTUAL_ROOT: /var/www/html
+        VIRTUAL_PORT: 9000
+        VIRTUAL_PROTO: fastcgi
+      container_name: bubble-bubble-fpm
+      volumes:
+        - ./:/var/www/html
+        - ./deploy/php.ini:/usr/local/etc/php/php.ini
+        - ./deploy/php-fpm.conf:/usr/local/etc/php-fpm.conf
+      logging:
+        options:
+          max-size: "100m"
+          max-file: "10"

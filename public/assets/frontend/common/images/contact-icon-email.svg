@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-email@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icon-email" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M12.9995006,14 C11.04902,14 1,5.891 1,5.891 L1,5 C1,3.896 1.89484416,3 2.99941742,3 L22.9995839,3 C24.1051558,3 25,3.896 25,5 L24.9840206,6 C24.9840206,6 15.04386,14 12.9995006,14 Z M12.9995006,16.75 C15.1377388,16.75 24.9840206,9 24.9840206,9 L25,21 C25,22.104 24.1051558,23 22.9995839,23 L2.99941742,23 C1.89584287,23 1,22.104 1,21 L1.01597936,9 C1.01498065,9 11.04902,16.75 12.9995006,16.75 Z" id="Shape" fill="#7356A7" fill-rule="nonzero"></path>
+    </g>
+</svg>
